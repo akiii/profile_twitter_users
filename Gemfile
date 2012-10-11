@@ -41,6 +41,7 @@ gem 'execjs'
 gem 'therubyracer'
 
 gem 'haml-rails'
+gem 'erb2haml'
 
 gem 'unicorn'
 gem 'capistrano'
