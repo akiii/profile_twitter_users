@@ -1,5 +1,12 @@
+require 'capistrano_colors'
+
+#$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+#require 'rvm/capistrano'
+#set :rvm_ruby_string, '1.9.3p194'
+#set :rvm_type, :user
+
 set :application, "profile_twitter_users"
-set :repository,  "git@github.com:akiii/profile_twitter_users.git"
+set :repository,  "https://github.com/akiii/profile_twitter_users.git"
 set :branch, "master"
 set :scm, :git
 
