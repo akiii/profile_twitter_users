@@ -47,3 +47,5 @@ gem 'unicorn'
 gem 'capistrano'
 gem 'capistrano_colors'
 gem 'capistrano-unicorn'
+
+gem 'twitter'
