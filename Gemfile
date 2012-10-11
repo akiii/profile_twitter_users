@@ -40,6 +40,8 @@ gem 'jquery-rails'
 gem 'execjs'
 gem 'therubyracer'
 
+gem 'haml-rails'
+
 gem 'unicorn'
 gem 'capistrano'
 gem 'capistrano_colors'
