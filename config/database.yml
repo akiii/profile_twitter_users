@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: profile_twitter_users_production
   pool: 5
-  username: root
-  password:
-  socket: /tmp/mysql.sock
+  username: ptu
+  password: ptucoco
+  socket: /var/lib/mysql/mysql.sock
