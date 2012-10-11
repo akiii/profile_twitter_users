@@ -36,3 +36,11 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'execjs'
+gem 'therubyracer'
+
+gem 'unicorn'
+gem 'capistrano'
+gem 'capistrano_colors'
+gem 'capistrano-unicorn'
