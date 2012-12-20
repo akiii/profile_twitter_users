@@ -9,7 +9,11 @@ class TweetsController < ApplicationController
     num_attempts = 0
     begin
       num_attempts += 1
-      tweets = Twitter.list_timeline('sfc_list', 'sfc-all', { :count => NUM_OF_COUNT, :since_id => $since_tweet_id })
+      if $since_tweet_id
+        tweets = Twitter.list_timeline('sfc_list', 'sfc-all', { :count => NUM_OF_COUNT, :since_id => $since_tweet_id })
+      else
+        tweets = Twitter.list_timeline('sfc_list', 'sfc-all', { :count => NUM_OF_COUNT })
+      end
       tweets.each do |tweet|
         params = {:text => tweet.text, :user => tweet.user.screen_name, :profile_image_url => tweet.user.profile_image_url, :created_at => tweet.created_at}
         Tweet.create(params) unless Tweet.exists?(params)
